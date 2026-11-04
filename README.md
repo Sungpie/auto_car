@@ -4,7 +4,7 @@ ATmega128A와 초음파 센서를 이용한 자율주행 자동차 펌웨어입�
 
 ## 차량 사진
 
-![초음파 센서와 제어 보드가 장착된 자율주행 RC카](images/auto-car.png)
+<img src="images/auto-car.png" alt="초음파 센서와 제어 보드가 장착된 자율주행 RC카" width="50%">
 
 ## 주요 기능
 
