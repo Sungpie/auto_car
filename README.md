@@ -36,12 +36,12 @@ UART1은 9600bps로 설정되어 있으며 대소문자를 모두 사용할 수 
 
 ## 빌드
 
-Microchip Studio(또는 Atmel Studio)에서 `07.AUTO_CAR_MY.cproj`를 열고 ATmega128A용 AVR GCC 도구 모음과 디바이스 팩을 설치한 뒤 빌드합니다. 생성된 HEX 파일을 프로그래머로 보드에 기록합니다.
+AVR GCC와 ATmega128A 디바이스 지원이 필요합니다. Microchip Studio(또는 Atmel Studio)에서 ATmega128A용 C 프로젝트를 만들고 `src/`의 소스와 `include/`의 헤더를 추가한 뒤, 컴파일러의 헤더 검색 경로에 `include/`를 지정하고 빌드합니다. 생성된 HEX 파일을 프로그래머로 보드에 기록합니다. Studio 프로젝트 파일은 Git에서 제외합니다.
 
 ## 파일 구성
 
-- `main.c`: 초기화, 운전 모드 및 주행 판단
-- `ultrasonic.c`, `ultrasonic.h`: 초음파 센서 측정
-- `pwm.c`, `pwm.h`: 모터 PWM 및 방향 제어
-- `uart0.c`, `uart1.c`: 직렬 통신
-- `button.c`, `led.c`: 버튼 및 LED 제어
+- `src/main.c`: 초기화, 운전 모드 및 주행 판단
+- `src/ultrasonic.c`, `include/ultrasonic.h`: 초음파 센서 측정
+- `src/pwm.c`, `include/pwm.h`: 모터 PWM 및 방향 제어
+- `src/uart0.c`, `src/uart1.c`: 직렬 통신
+- `src/button.c`, `src/led.c`: 버튼 및 LED 제어
